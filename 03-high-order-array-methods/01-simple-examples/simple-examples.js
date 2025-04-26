@@ -16,17 +16,18 @@ const evenNumbers = numbers.filter((num) => num > 2);
 const addNumbers = numbers.reduce((total, num) => {
   return total + num;
 }, 0);
-console.log(addNumbers);
+//console.log(addNumbers);
 /**
  * forEach: Iterates through array elements and applies a function without creating a new array.
  */
 const newArr = numbers.forEach((number) => {
-  console.log(number);
+  //console.log(number);
 });
 /**
  * find: Returns the first array element that satisfies a specified condition.
  */
-
+const findArr = numbers.find((number) => number > 2);
+console.log(findArr);
 /**
  * some: Checks if at least one array element satisfies a condition.
  */
