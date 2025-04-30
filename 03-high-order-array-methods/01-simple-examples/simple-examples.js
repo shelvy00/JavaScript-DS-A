@@ -27,11 +27,14 @@ const newArr = numbers.forEach((number) => {
  * find: Returns the first array element that satisfies a specified condition.
  */
 const findArr = numbers.find((number) => number > 2);
-console.log(findArr);
+//console.log(findArr);
 /**
  * some: Checks if at least one array element satisfies a condition.
  */
-
+const even = (element) => element % 2 === 0;
+//console.log(numbers.some(even));
 /**
  * every: Checks if all array elements satisfy a condition.
  */
+const isBelowThreshold = (currentValue) => currentValue < 40;
+console.log(numbers.every(isBelowThreshold));
